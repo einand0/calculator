@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+#calculator {
+    background-color: coral;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#screen {
+    padding-right: 20px;
+    width: 80%;
+    background-color: #fff;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.current-number-screen{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#buttons {
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    ;
+
+    display: grid;
+    grid-template-areas: "clear clear clear clear"
+        "seven eigth nine divide"
+        "four five six x"
+        "one two three minus"
+        "zero dot equals plus";
+    gap: 2px;
+}
+
+.numberBtn, .button, .equals{
+    border:1px solid gray;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear{
+    border:1px solid gray;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear{
+    grid-area: clear;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eigth {
+    grid-area: eigth;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.x{
+    grid-area: x;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.plus{
+    grid-area: plus;
+    background-color: cornflowerblue;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.dot{
+    grid-area: dot;
+}
+
+.equals{
+    grid-area: equals;
+}
